@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <input type="text" id="addProductInput" name="addProductInput" placeholder="Назва товару"/>
+            <button type="submit" data-tooltip="якийсь опис" id="addProductButton" >Додати</button>
+        </form>
+
+        <section class="product bought">
+            <p class="name">Помідори</p>
+            <div class="secondColumn">
+                <button class="minus">-</button>
+                <span class="count">2</span>
+                <button class="plus">+</button>
+            </div>
+
+            <div class="thirdColumn">
+                <button class="buy">Не куплено</button>
+                <button class="cancel">×</button>
+            </div>
+            
+        </section>
+
+        <section class="product">
+            <p class="name">Печиво</p>
+            <div class="secondColumn">
+                <button class="minus">-</button>
+                <span class="count">2</span>
+                <button class="plus">+</button>
+            </div>
+
+            <div class="thirdColumn">
+                <button class="buy">Куплено</button>
+                <button class="cancel">×</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <input type="text" name="ProductName" value="Сир" class="name" autofocus/>
+            <div  class="secondColumn">
+                <button class="minus" disabled>-</button>
+                <span class="count">1</span>
+                <button class="plus">+</button>
+            </div>
+
+            <div class="thirdColumn">
+                <button class="buy">Куплено</button>
+                <button class="cancel ">×</button>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <aside>
+        <h2>Залишилося</h2>
+        <section>
+            <span class="count">Печиво
+                <span class="countRight">2</span>
+            </span>
+
+            <span class="count">Сир
+                <span class="countRight">1</span>
+            </span>
+        </section>
+
+        <h2>Куплено</h2>
+        <section class="bought">
+            <span class="count">Помідори
+                <span class="countRight">2</span>
+            </span>
+        </section>
+    </aside>
+    
+</body>
+</html>
