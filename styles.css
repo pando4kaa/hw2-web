@@ -23,7 +23,7 @@ body > main > * {
     border-bottom: 1px lightgray solid;
 }
 body > main > section {
-    padding: 10px 18px;
+    padding: 12px 18px;
 }
 body > main > *:last-child {
     border: none;
