@@ -63,7 +63,6 @@ body > main > form {
 }
 .product input.name {
     border:1px solid white;
-    
     border-radius: 3px;
 }
 .product input.name:focus {
@@ -205,6 +204,7 @@ button:hover::after{
 }
 .BuyList h2{
     margin-top: 4px;
+    font-size: 1.2rem;
     
 }
 .BuyList{
@@ -213,7 +213,7 @@ button:hover::after{
     border-radius: 10px 10px 0 0;
     position: fixed;
     bottom: 0;
-    transform: translateY(40%);
+    transform: translateY(44%);
     left: 10px;
     padding: 10px 20px;
     transition: all 0.5s ease-in-out;
@@ -231,26 +231,9 @@ button:hover::after{
 
 .author{
     margin: 0;
+    font-size: 1rem;
 }
  
-@media screen and (max-width: 350px){
-    .product {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .product > * {
-        margin:5px 0;
-    }
-    .product .name {
-        text-align: center;
-    }
-    .product .thirdColumn {
-        display: flex;
-        justify-content: flex-end;
-        flex-basis: 0;
-    }
-}
 
  @media screen and (max-width: 500px) {
     body {
@@ -267,6 +250,54 @@ button:hover::after{
         font-size: 12px;
     }
  }
+
+ @media screen and (max-width: 400px){
+    body, #addProductInput, #addProductButton, .product input.name, .minus, .plus, .cancel, .buy, .count {
+        font-size: 3.1vw;
+    }
+    body > main > * {
+        padding: 4.5vw;
+    }
+    body > main > section {
+        padding: 3vw 4.5vw;
+    }
+    #addProductInput {
+        padding: 2vw;
+    }
+    #addProductButton{
+        padding: 2.4vw 7.6vw;
+    }
+    .product .thirdColumn {
+        flex-basis: 40vw;
+    }
+    .buy{
+        padding: 2.2vw 4.7vw;
+    }
+    .cancel {
+        padding: 2.2vw 4.2vw;
+        margin-left: 1.5vw;
+    }
+    .minus, .plus {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+    .count {
+        padding: 1.5vw 2.5vw;
+    }
+    body > aside > * {
+        padding: 4vw;
+    }
+    body > aside .count {
+        font-size: 3vw;
+    }
+    .countRight {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+
+
  @media print {
     .BuyList{
         border: 2px rgb(103, 33, 170) solid;
